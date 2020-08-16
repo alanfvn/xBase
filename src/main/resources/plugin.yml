@@ -2,4 +2,4 @@ name: xBase
 version: ${project.version}
 main: octils.base.Base
 load: STARTUP
-authors: [octils]
+authors: [zivlac]

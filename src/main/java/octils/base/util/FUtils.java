@@ -17,7 +17,9 @@ public class FUtils {
 	public static DecimalFormat getFormat() {
 		return new DecimalFormat("0.00");
 	}
-	
+
+	public static String strip(String s){ return ChatColor.stripColor(s);}
+
 	public static String color(String s) {
 		return ChatColor.translateAlternateColorCodes('&', s);
 	}
@@ -30,8 +32,7 @@ public class FUtils {
        return color("&e"+msg);
     }
 
-
-
+    
     public static String getHeart() {
     	return "\u2665";
     }

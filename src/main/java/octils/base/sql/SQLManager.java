@@ -17,7 +17,7 @@ public class SQLManager
 
 
 
-    private SQLManager() { }
+    private SQLManager() {}
 
     public static SQLManager get(){
         return sql == null ? sql = new SQLManager() : sql;

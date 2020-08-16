@@ -16,7 +16,7 @@ public class Base extends JavaPlugin {
 
 
         TwitterManager.get().setup(cf.getString("auth.key"), cf.getString("auth.secret"),
-                cf.getString("auth.token"), cf.getString("auth.tokensecret"));
+                cf.getString("auth.token"), cf.getString("auth.token_secret"));
 
         //INIT SQL
         try {

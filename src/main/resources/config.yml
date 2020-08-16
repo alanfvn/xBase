@@ -1,0 +1,11 @@
+sql: 
+  ip: ""
+  port: ""
+  user: ""
+  password: ""
+  database: ""
+auth:
+  key: ""
+  secret: ""
+  token: ""
+  token_secret: ""
