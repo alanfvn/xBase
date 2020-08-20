@@ -29,7 +29,7 @@ public class MojangApi {
     public static String getName(UUID uuid) {
         try {
             Scanner scanner = new Scanner(new URL("https://api.mojang.com/user/profiles/"
-                    + uuid.toString().replace("-","") + "/names").openStream(), "UTF-8");
+            + uuid.toString().replace("-","") + "/names").openStream(), "UTF-8");
             String s = scanner.next();
             s = s.substring(s.lastIndexOf('{'), s.lastIndexOf('}') + 1);
             return ((JSONObject) new JSONParser().parse(s)).get("name").toString();
