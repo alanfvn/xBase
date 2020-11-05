@@ -11,8 +11,8 @@ public class DUtils {
 
 	private DUtils() { throw new RuntimeException("Cannot instantiate a utility class."); }
 
-	public static Calendar calendarUTC = Calendar.getInstance(TimeZone.getTimeZone("UTC")); //mostly for sql
-	public static ZoneId zoneId = ZoneId.of("America/Guatemala"); //cst
+	public final static Calendar calendarUTC = Calendar.getInstance(TimeZone.getTimeZone("UTC")); //mostly for sql
+	public final static ZoneId zoneId = ZoneId.of("America/Guatemala"); //cst
 
 
 	public static DateTimeFormatter getFormatter(){
