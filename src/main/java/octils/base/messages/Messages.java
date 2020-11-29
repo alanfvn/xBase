@@ -1,24 +1,24 @@
 package octils.base.messages;
 
-import octils.base.util.FUtils;
+import octils.base.util.CC;
 
 public class Messages
 {
-    public static String NO_PERMISSIONS;
-    public static String PLAYER_NOT_FOUND;
-    public static String NO_CONSOLE;
-    public static String NO_DATA_ERROR;
-    public static String SYNTAX;
-    public static String CANT_DO_THIS_STATE;
-    public static String MUST_BE_NUMBER;
+    public static String NO_PERMISSIONS,
+                PLAYER_NOT_FOUND,
+                NO_CONSOLE,
+                NO_DATA_ERROR,
+                SYNTAX,
+                CANT_DO_THIS_STATE,
+                MUST_BE_NUMBER;
     
     static {
-        NO_PERMISSIONS = FUtils.color("&cYou don't have permission to do this!");
-        PLAYER_NOT_FOUND = FUtils.color("&cPlayer not found!");
-        NO_CONSOLE = FUtils.color("&cYou must be a player to use this command!");
-        NO_DATA_ERROR = FUtils.color("&c&oSorry your data couldn't be loaded, please try again later..");
-        SYNTAX = FUtils.color("&cPlease check your syntax!");
-        CANT_DO_THIS_STATE = FUtils.color("&cYou can't do that in the current state!");
-        MUST_BE_NUMBER = FUtils.color("&cThe amount must be a number!");
+        NO_PERMISSIONS = CC.color("&cYou don't have permission to do this!");
+        PLAYER_NOT_FOUND = CC.color("&cPlayer not found!");
+        NO_CONSOLE = CC.color("&cYou must be a player to use this command!");
+        NO_DATA_ERROR = CC.color("&c&oSorry your data couldn't be loaded, please try again later..");
+        SYNTAX = CC.color("&cPlease check your syntax!");
+        CANT_DO_THIS_STATE = CC.color("&cYou can't do that in the current state!");
+        MUST_BE_NUMBER = CC.color("&cThe amount must be a number!");
     }
 }

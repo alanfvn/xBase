@@ -2,7 +2,12 @@ package octils.base.util;
 
 import org.bukkit.ChatColor;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public final class CC {
+
+	private CC() { throw new RuntimeException("Cannot instantiate a utility class."); }
 
 
 	public static final String BLUE = ChatColor.BLUE.toString();
@@ -74,8 +79,16 @@ public final class CC {
 	public static final String ID_PURPLE = D_PURPLE + I;
 	public static final String IL_PURPLE = L_PURPLE + I;
 
-
-	private CC() {
-		throw new RuntimeException("Cannot instantiate a utility class.");
+	
+	public static String strip(String s){
+		return ChatColor.stripColor(s);
 	}
+
+	public static String color(String s){
+		return ChatColor.translateAlternateColorCodes('&', s);
+	}
+
+	public static List<String> colorList(List<String> list){ return list.stream().map(CC::color).collect(Collectors.toList()); }
+
+
 }

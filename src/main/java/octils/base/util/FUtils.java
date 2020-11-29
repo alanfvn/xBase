@@ -10,26 +10,15 @@ import java.util.concurrent.TimeUnit;
 
 public class FUtils {
 
-    private FUtils() {
-        throw new RuntimeException("Cannot instantiate a utility class.");
-    }
+    private FUtils() { throw new RuntimeException("Cannot instantiate a utility class."); }
 
-	public static DecimalFormat getFormat() {
-		return new DecimalFormat("0.00");
-	}
-
-	public static String strip(String s){ return ChatColor.stripColor(s);}
-
-	public static String color(String s) {
-		return ChatColor.translateAlternateColorCodes('&', s);
-	}
 
 	public static String deathMsg(String victim, int vkills, String killer, int kkills, String death){
         String msg = death.replace(victim, "&c"+victim+"&7["+vkills+"&7]&e");
         if(killer != null){
            msg = msg.replace(killer,"&c"+killer+"&7["+kkills+"&7]&e" );
         }
-       return color("&e"+msg);
+       return CC.color("&e"+msg);
     }
 
     
@@ -38,7 +27,7 @@ public class FUtils {
     }
     
     public static String getLine() {
-    	return color("&m----------------");
+    	return CC.color("&m----------------");
     }
     
     public static ChatColor randomChatColor() {
