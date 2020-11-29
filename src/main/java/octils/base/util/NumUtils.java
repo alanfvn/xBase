@@ -30,7 +30,7 @@ public class NumUtils {
             n = (double)k / (double)d;
         }
 
-        return Double.parseDouble(FUtils.getFormat().format(n));
+        return n;
     }
 
     public static double getPercentage(double hundred_percent, double percent_to_calc){
