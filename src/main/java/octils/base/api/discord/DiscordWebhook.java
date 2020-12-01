@@ -1,4 +1,4 @@
-package octils.base.discord;
+package octils.base.api.discord;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.Color;

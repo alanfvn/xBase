@@ -1,7 +1,7 @@
 package octils.base;
 
 import octils.base.sql.SQLManager;
-import octils.base.twit.TwitterManager;
+import octils.base.api.twit.TwitterManager;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

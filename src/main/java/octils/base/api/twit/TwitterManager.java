@@ -1,4 +1,4 @@
-package octils.base.twit;
+package octils.base.api.twit;
 
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
